@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(0, 119, 146);
+    border-radius: 5px;
+}
+header{
+    background: rgb(1, 56, 68);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    padding: 20px;
+}
+header .encabezado img{
+    width: 100%;
+    padding: 20px;
+}
+header .encabezado{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+header .encabezado .centrar{
+    margin: auto;
+}
+header .encabezado h1, 
+header .encabezado p{
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+
+header .contenedor{
+    width: 100%;
+    overflow: hidden;padding: 10px;
+}
+header .contenedor .opciones{
+    width: 75%;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+header .contenedor .opciones a{
+    padding: 20px;
+}
+header .contenedor .usuario{
+    width: 25%;
+    height: 50px;
+    float: right;
+    text-align: center;
+}
+
+header .contenedor .usuario a{
+    padding: 15px;
+}
+header .contenedor i,
+header .contenedor a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+header .contenedor a{
+    padding: 15px 5px 15px 15px; 
+}
+header .contenedor a:hover{
+    color: rgb(206, 206, 206);
+    transition: .5s;
+}
+header #carro{
+    display: inline;
+    font-size: 20px;
+    color: #fff;
+}
+footer{
+    background: rgb(0, 10, 12);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+footer .redes-sociales{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .redes-sociales a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: .5s;
+}
+footer .redes-sociales .facebook:hover{background: #3b5998;}
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .instagram:hover{background: #405de6;}
+footer .redes-sociales .youtube:hover{background: #ff0000;}
+footer .redes-sociales .github:hover{background: #868686;}
+@media screen and (max-width: 700px){
+    header{
+        padding: 0;
+    }
+    header .encabezado img{
+        width: 50%;
+        text-align: center;
+    }
+    header .encabezado h1{
+        font-size: 20px;
+    }
+    header .encabezado p{
+        font-size: 10px;
+    }
+    header .contenedor .opciones{
+        width: 100%;
+        text-align: center;
+    }
+    header .contenedor .usuario{
+        width: 100%;
+    }
+}

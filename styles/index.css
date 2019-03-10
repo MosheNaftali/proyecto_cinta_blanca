@@ -1,0 +1,160 @@
+article{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+article .filtros{
+    width: 15%;
+    height: 100%;
+    background: rgba(0, 96, 117, 0.05);
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+article .filtros .encabezado{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+article .filtros .formulario p{
+    font-size: 30px;
+}
+article .filtros .formulario input[type="radio"],
+article .filtros .formulario input[type="checkbox"]{
+    display: none;
+}
+article .filtros .formulario .precio label,
+article .filtros .formulario .marca label{
+    color: #000;
+    padding: 5px 15px 5px 51px;;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+article .filtros .formulario .precio label:before,
+article .filtros .formulario .marca label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid  #004555;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    transition: .5s;
+}
+article .filtros .formulario .marca label:before{
+    border-radius: 3px;
+}
+article .filtros .formulario .precio input[type="radio"]:checked + label:before,
+article .filtros .formulario .marca input[type="checkbox"]:checked + label:before{
+    background: #004555;
+}
+.col-lg-4,.col-sm-6{
+    margin-top: 5px;
+}
+article .contenido{
+    width: 85%;
+    float: right;
+    padding: 20px;
+}
+article .contenido .row{
+    margin: auto;
+}
+article .contenido .row .tarjeta{
+    padding: 15px;
+    height: 100%;
+    border: 5px solid rgb(0, 119, 146);
+    border-radius: 15px;
+    margin-top: 5px;
+}
+article .contenido .row .tarjeta .foto{
+    position: relative;
+    vertical-align: middle;
+}
+article .contenido .row .tarjeta .foto .precio{
+    position: absolute;
+    z-index:-1;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30%;
+    width: 100%;
+}
+article .contenido .row .tarjeta .foto .marca{
+    position: absolute;
+    float: right;
+    bottom: 20px;
+}
+article .contenido .row .tarjeta .foto .producto{
+width: 100%;
+}
+article .contenido .row .tarjeta .foto img:hover{
+    opacity: .1;
+    transition: .75s;
+}
+article .contenido .row .tarjeta .titulo h1{
+    font-size: 40px;
+    color: rgb(0, 119, 146);
+    text-align: center;
+}
+article .contenido .row .tarjeta .descripcion p{
+    text-align: justify;
+    text-align-last: center;
+}
+article .contenido .row .tarjeta .boton-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: rgb(0, 151, 88);
+    width: 49%;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+article .contenido .row .tarjeta .boton-carrito:hover{
+    transition: .5s;
+    background: rgb(0, 180, 105);
+}
+article .contenido .row .tarjeta .boton-carrito p{
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    display: inline;
+}
+article .contenido .row .tarjeta .boton-comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: rgb(0, 119, 146);
+    width: 49%;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+}
+article .contenido .row .tarjeta .boton-comprar:hover{
+    transition: .5s;
+    background: rgb(0, 157, 192);
+}
+article .contenido .row .tarjeta .boton-comprar p{
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    display: inline;
+}
+@media screen and (max-width: 700px){
+    article .filtros{
+        width: 100%;
+    }
+    article .contenido{
+        width: 100%;
+    }
+}
