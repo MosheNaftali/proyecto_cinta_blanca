@@ -150,10 +150,12 @@ article .contenido .row .tarjeta .boton-comprar p{
     font-size: 15px;
     display: inline;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
     article .filtros{
         width: 100%;
     }
+}
+@media screen and (max-width: 700px){
     article .contenido{
         width: 100%;
     }
