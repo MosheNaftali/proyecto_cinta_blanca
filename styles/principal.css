@@ -8,6 +8,10 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: rgb(0, 119, 146);
     border-radius: 5px;
+    
+}
+body{
+    font-family: 'Google Sans', sans-serif;
 }
 header{
     background: rgb(1, 56, 68);
@@ -43,10 +47,18 @@ header .contenedor-texto{
     padding: 15px;
     
 }
+
+header .encabezado .contenedor-texto h1{
+    font-size: 30px;
+}
+header .encabezado .contenedor-texto p{
+    font-size: 15px;
+}
 header .encabezado .contenedor-texto h1, 
 header .encabezado .contenedor-texto p{
     color: #fff;
     display: block;
+    margin-bottom: 10px;
 }
 
 header .contenedor{

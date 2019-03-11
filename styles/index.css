@@ -7,7 +7,6 @@ article .filtros{
     width: 15%;
     height: 100%;
     background: rgba(0, 96, 117, 0.05);
-    padding: 20px;
     font-family: 'Raleway', sans-serif;
     display: inline-block;
 }
@@ -51,29 +50,25 @@ article .filtros .formulario .precio input[type="radio"]:checked + label:before,
 article .filtros .formulario .marca input[type="checkbox"]:checked + label:before{
     background: #004555;
 }
-.col-lg-4,.col-sm-6{
-    margin-top: 5px;
-}
 article .contenido{
     width: 85%;
     float: right;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
-article .contenido .row{
-    margin: auto;
-}
-article .contenido .row .tarjeta{
+article .contenido .tarjeta{
+    width: 29%;
     padding: 15px;
+    margin: 5px;
     height: 100%;
     border: 5px solid rgb(0, 119, 146);
     border-radius: 15px;
-    margin-top: 5px;
 }
-article .contenido .row .tarjeta .foto{
+article .contenido .tarjeta .foto{
     position: relative;
     vertical-align: middle;
 }
-article .contenido .row .tarjeta .foto .precio{
+article .contenido .tarjeta .foto .precio{
     position: absolute;
     z-index:-1;
     font-size: 50px;
@@ -81,28 +76,32 @@ article .contenido .row .tarjeta .foto .precio{
     margin-top: 30%;
     width: 100%;
 }
-article .contenido .row .tarjeta .foto .marca{
+article .contenido .tarjeta .foto .marca{
     position: absolute;
     float: right;
     bottom: 20px;
 }
-article .contenido .row .tarjeta .foto .producto{
+article .contenido .tarjeta .foto .producto{
 width: 100%;
 }
-article .contenido .row .tarjeta .foto img:hover{
+article .contenido .tarjeta .foto img:hover{
     opacity: .1;
     transition: .75s;
 }
-article .contenido .row .tarjeta .titulo h1{
+article .contenido .tarjeta .titulo h1{
     font-size: 40px;
     color: rgb(0, 119, 146);
     text-align: center;
 }
-article .contenido .row .tarjeta .descripcion p{
+article .contenido .tarjeta .descripcion p{
     text-align: justify;
     text-align-last: center;
+
 }
-article .contenido .row .tarjeta .boton-carrito{
+article .contenido .tarjeta .botones{
+    margin-top: 10px;
+}
+article .contenido .tarjeta .boton-carrito{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,23 +109,23 @@ article .contenido .row .tarjeta .boton-carrito{
     border: 2px solid transparent;
     border-radius: 5px;
     background: rgb(0, 151, 88);
-    width: 49%;
+    width: 48%;
     height: 50px;
     float: left;
     margin-bottom: 10px;
     cursor: pointer;
 }
-article .contenido .row .tarjeta .boton-carrito:hover{
+article .contenido .tarjeta .boton-carrito:hover{
     transition: .5s;
     background: rgb(0, 180, 105);
 }
-article .contenido .row .tarjeta .boton-carrito p{
+article .contenido .tarjeta .boton-carrito p{
     margin: 0;
     color: #fff;
     font-size: 15px;
     display: inline;
 }
-article .contenido .row .tarjeta .boton-comprar{
+article .contenido .tarjeta .boton-comprar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,16 +134,16 @@ article .contenido .row .tarjeta .boton-comprar{
     border: 2px solid transparent;
     border-radius: 5px;
     background: rgb(0, 119, 146);
-    width: 49%;
+    width: 48%;
     height: 50px;
     float: right;
     cursor: pointer;
 }
-article .contenido .row .tarjeta .boton-comprar:hover{
+article .contenido .tarjeta .boton-comprar:hover{
     transition: .5s;
     background: rgb(0, 157, 192);
 }
-article .contenido .row .tarjeta .boton-comprar p{
+article .contenido .tarjeta .boton-comprar p{
     margin: 0;
     color: #fff;
     font-size: 15px;
