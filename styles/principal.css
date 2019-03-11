@@ -18,33 +18,48 @@ header{
     font-family: 'Merriweather', serif;
     padding: 20px;
 }
-header .encabezado img{
-    width: 100%;
-    padding: 20px;
-}
 header .encabezado{
-    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-header .encabezado .centrar{
-    margin: auto;
+header .encabezado .contenedor-imagen{
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 15px;
 }
-header .encabezado h1, 
-header .encabezado p{
+
+header .encabezado .contenedor-imagen img{
+    width: 100%;
+}
+header .contenedor-texto{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 15px;
+    
+}
+header .encabezado .contenedor-texto h1, 
+header .encabezado .contenedor-texto p{
     color: #fff;
     display: block;
-    margin: 0;
 }
 
 header .contenedor{
     width: 100%;
-    overflow: hidden;padding: 10px;
+    overflow: hidden;
 }
 header .contenedor .opciones{
     width: 75%;
     height: 50px;
     float: left;
-    margin-bottom: 10px;
+    
+    display: flex;
+    align-items: center;
 }
 header .contenedor .opciones a{
     padding: 20px;
@@ -54,10 +69,9 @@ header .contenedor .usuario{
     height: 50px;
     float: right;
     text-align: center;
-}
-
-header .contenedor .usuario a{
-    padding: 15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 header .contenedor i,
 header .contenedor a{
@@ -117,9 +131,17 @@ footer .redes-sociales .github:hover{background: #868686;}
     header{
         padding: 0;
     }
-    header .encabezado img{
+    header .encabezado{
+        display: block;
+    }
+    header .encabezado .contenedor-imagen{
+        width: 100%;
+    }
+    header .encabezado .contenedor-imagen img{
         width: 50%;
-        text-align: center;
+    }
+    header .encabezado .contenedor-texto{
+        width: 100%;
     }
     header .encabezado h1{
         font-size: 20px;
